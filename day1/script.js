@@ -75,26 +75,93 @@ if ((leapYear % 400 == 0 && leapYear % 100 != 0) || leapYear % 4 == 0)
 
 // bsics calculater
 
-let choice = parseInt(
-	prompt("Enter Choice 1:Addition 2:Subtraction 3: Multiplication 4:Division")
-);
-let number = parseInt(prompt("Enter First Number"));
-let number2 = parseInt(prompt("Enter Second Number"));
-console.log(choice);
+// let choice = parseInt(
+// 	prompt("Enter Choice 1:Addition 2:Subtraction 3: Multiplication 4:Division")
+// );
+// let number = parseInt(prompt("Enter First Number"));
+// let number2 = parseInt(prompt("Enter Second Number"));
+// console.log(choice);
 
-switch (choice) {
-	case 1:
-		console.log(`Addition of the two number is ${number + number2}`);
-		break;
-	case 2:
-		console.log(`Subtraction of the two number is ${number - number2}`);
-		break;
-	case 3:
-		console.log(`Multiplication of the two number is ${number * number2}`);
-		break;
-	case 4:
-		console.log(`Division of the two number is ${number / number2}`);
-		break;
-	default:
-		console.log("Please enter valid Choice");
+// switch (choice) {
+// 	case 1:
+// 		console.log(`Addition of the two number is ${number + number2}`);
+// 		break;
+// 	case 2:
+// 		console.log(`Subtraction of the two number is ${number - number2}`);
+// 		break;
+// 	case 3:
+// 		console.log(`Multiplication of the two number is ${number * number2}`);
+// 		break;
+// 	case 4:
+// 		console.log(`Division of the two number is ${number / number2}`);
+// 		break;
+// 	default:
+// 		console.log("Please enter valid Choice");
+// }
+
+
+// Level 2
+// write js code to generate 3 random numbers between 1-13(A-,2-10,K,Q,J) pritn the three value and only if all three same "You win",else "You loss",
+
+let n1 = Math.ceil(Math.random() * 13);
+let n2 = Math.ceil(Math.random() * 13);
+let n3 = Math.ceil(Math.random() * 13);
+//console.log(n1);
+
+// console.log(`first value is ${n1}`);
+// console.log(`Second value is ${n2}`);
+// console.log(`Third value is ${n3}`);
+
+if (n1 > 10 || n1===1) {
+    switch (n1) {
+        case 1: console.log(`first value is A`);
+            break;
+        case 10: console.log(`first value is J`);
+            break;
+        case 11: console.log(`first value is Q`);
+            break;
+        case 12: console.log(`first value is K`);
+            break;
+    }
+} else {
+    console.log(`first value is ${n1}`);
+}
+
+if (n2 > 10 || n2===1) {
+    switch (n2) {
+        case 1: console.log(`first value is A`);
+            break;
+        case 10: console.log(`first value is J`);
+            break;
+        case 11: console.log(`first value is Q`);
+            break;
+        case 12: console.log(`first value is K`);
+            break;
+    }
+} else {
+    console.log(`first value is ${n2}`);
+}
+
+
+if (n3 > 10 || n3===1) {
+    switch (n3) {
+        case 1: console.log(`first value is A`);
+            break;
+        case 10: console.log(`first value is J`);
+            break;
+        case 11: console.log(`first value is Q`);
+            break;
+        case 12: console.log(`first value is K`);
+            break;
+    }
+} else {
+    console.log(`first value is ${n3}`);
+}
+
+
+
+if (n1 === n2 && n2 === n3) {
+    alert("Congrat`s , You Win");
+} else {
+    alert("You Loss");
 }
