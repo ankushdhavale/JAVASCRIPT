@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 4px;
+}
+
+button{
+    padding: 0.3rem 2rem;
+    border: 1px solid royalblue;
+    border-radius: 3px;
+}

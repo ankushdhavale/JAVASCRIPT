@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: linear-gradient(to right, #88B6F2,#9BC1F2,#B3CFF2,#DFE9F2,#83a4e7,#7d89e8);
+}
+
+img{
+    width: 300px;
+    border-radius: 4px;
+}
+
+input{
+    outline: none;
+    border: 1px solid royalblue;
+    padding: 0.6rem 2rem;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 30%;
+}
+
+.para{
+    font-size: 30px;
+}
+
+.sub-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    border: 1px solid royalblue;
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+
+.sub-div:hover{
+    box-shadow: 1px 1px 6px royalblue;
+    transition: all 0.5s ease;
+}
+.allInput{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+#main{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button{
+    padding: 0.4rem 3rem;
+    font-size: 1rem;
+    border: 1px solid royalblue;
+    border-radius: 3px;
+    background-color: #88B6F2;
+    margin-top: -15px;
+    color: white;
+}
+
+@media only screen and (max-width:800px) {
+    .allInput{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        gap: 0.41rem;
+        width: 100%;
+    }
+
+    input{
+        width: 60%;
+    }
+    
+    button{
+        margin-top: -20px;
+        width: 60%;
+    }
+}
