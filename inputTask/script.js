@@ -6,6 +6,7 @@ const mainDiv = document.querySelector("#main");
 addBtn.addEventListener("click", () => {
 	if (imgInp.value === "" && titleInp.value === "") {
 		alert("Please put the Input Value");
+		alert("Please put the Input Value");
 		return;
 	}
 	const para = document.createElement("p");
